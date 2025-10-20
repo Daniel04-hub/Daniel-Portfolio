@@ -3,7 +3,6 @@ const menuToggle = document.getElementById('menu-toggle');
 const navbar = document.getElementById('navbar');
 const navLinks = document.querySelectorAll('.nav-link');
 const contactForm = document.getElementById('contact-form');
-const downloadCvBtn = document.getElementById('download-cv');
 
 // Mobile Menu Toggle
 menuToggle.addEventListener('click', () => {
@@ -225,19 +224,6 @@ function showNotification(message, type) {
         style.remove();
     });
 }
-// CV Download functionality
-downloadCvBtn.addEventListener('click', function() {
-    const link = document.createElement('a');
-    link.href = 'assests/Naveen_Daniel_cv.pdf'; // Path to your PDF file
-    link.download = 'Naveen_Daniel_CV.pdf'; // File name when downloaded
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-    showNotification('CV downloaded successfully!', 'success');
-});
-
-
 // Scroll animations
 function animateOnScroll() {
     const elements = document.querySelectorAll('.service-card, .project-card, .timeline-item');
