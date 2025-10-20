@@ -862,14 +862,16 @@ body {
 }
 
 .btn-sub{
-  background-color: orangered;
-  height: 80px;
-  width: 200px;
-  font-size: 20px;
-  border-radius: 20px;
-  position: relative;
-  left:250px;
-  font-weight: 700;
+    background-color: orangered;
+    height: 80px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .btn-sub:hover{
@@ -952,6 +954,14 @@ body {
 }
 
 @media (max-width: 768px) {
+    .btn-sub {
+        position: static !important;
+        left: unset !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
     .navbar {
         position: fixed;
         top: 80px;
