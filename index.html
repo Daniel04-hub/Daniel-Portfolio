@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Naveen Daniel Portfolio</title>
 </head>
@@ -22,13 +24,14 @@
             <nav class="navbar" id="navbar">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#services" class="nav-link">Services</a>
+                <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
             </nav>
 
             <a href="#contact" class="contact-btn">Contact</a>
-            
+
             <button class="menu-toggle" id="menu-toggle">
                 <span></span>
                 <span></span>
@@ -42,21 +45,25 @@
         <div class="home-container">
             <div class="home-content">
                 <h3 class="animate-text">Hi There!</h3>
-                <h1 class="animate-text">I'm <span id="typing-name">Naveen Daniel</span><br>Frontend Developer</h1>
-                <p class="animate-text">Passionate about creating beautiful, responsive, and user-friendly web applications with modern technologies.</p>
-                
+                <h1 class="animate-text">I'm <span id="typing-name">Naveen Daniel</span><br>Full Stack Developer</h1>
+                <p class="animate-text">Passionate about creating beautiful, responsive, and user-friendly web
+                    applications with modern technologies.</p>
+
                 <div class="btn-box">
                     <button class="btn-primary" onclick="scrollToSection('contact')">Hire Me</button>
-                    <a href="assests/Naveen_Daniel_CV.pdf" download="Naveen_Daniel_CV.pdf" class="btn-secondary" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Download CV</a>
+                    <a href="assests/Naveen_Daniel_CV.pdf" download="Naveen_Daniel_CV.pdf" class="btn-secondary"
+                        style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Download
+                        CV</a>
                 </div>
-                
+
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/naveendaniel04/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/naveendaniel04/" class="social-link"><i
+                            class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/Daniel04-hub" class="social-link"><i class="fab fa-github"></i></a>
-                    
+
                 </div>
             </div>
-            
+
             <div class="home-image">
                 <div class="image-container">
                     <img src="assests/NaveenDaniel.passport.png" alt="Naveen Daniel" class="profile-img">
@@ -73,12 +80,14 @@
                     <img src="assests/NaveenDaniel.passport.png" alt="Naveen Daniel" class="about-img">
                 </div>
             </div>
-            
+
             <div class="about-content">
                 <h2 class="section-title">About <span>Me</span></h2>
-                <h3>Frontend <span>Developer</span></h3>
-                <p>I'm a passionate frontend developer with a strong foundation in modern web technologies. I enjoy creating responsive, user-friendly websites and applications that provide excellent user experiences. My goal is to bridge the gap between design and functionality.</p>
-                
+                <h3>Full Stack <span>Developer</span></h3>
+                <p>I'm a passionate full stack developer with a strong foundation in modern web technologies. I enjoy
+                    creating responsive, user-friendly websites and applications that provide excellent user
+                    experiences. My goal is to bridge the gap between design and functionality.</p>
+
                 <div class="skills-summary">
                     <div class="skill-item">
                         <i class="fas fa-code"></i>
@@ -93,7 +102,7 @@
                         <span>Performance</span>
                     </div>
                 </div>
-                
+
                 <button class="btn-secondary" onclick="scrollToSection('projects')">View Projects</button>
             </div>
         </div>
@@ -103,7 +112,7 @@
     <section class="education" id="education">
         <div class="education-container">
             <h2 class="section-title">My <span>Education</span></h2>
-            
+
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="timeline-content">
@@ -116,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <div class="timeline-date">2022-2026</div>
@@ -132,82 +141,144 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="services-container">
-            <h2 class="section-title">My <span>Services</span></h2>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fab fa-html5"></i>
+    <!-- Internship Experience Section -->
+    <section class="experience" id="experience">
+        <div class="experience-container">
+            <h2 class="section-title">Internship <span>Experience</span></h2>
+
+            <div class="timeline">
+                <!-- Item 1 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2025 – Present</div>
+                        <h3>Poorna Technology Consulting</h3>
+                        <h4>Software Development Intern</h4>
+                        <p class="role-summary">Developed a blog-based web application using Python, PHP, and Django.
+                            Implemented automated testing with Selenium to ensure system reliability and collaborated on
+                            backend feature development.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
                     </div>
-                    <h3>HTML5</h3>
-                    <p>Creating semantic, accessible HTML structure for modern web applications with best practices.</p>
-                    <a href="#" class="service-link">Learn More</a>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fab fa-css3-alt"></i>
+
+                <!-- Item 2 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jul 2025 – Aug 2025 (1 Month)</div>
+                        <h3>Leader’s Desk</h3>
+                        <h4>Front-end Development Intern</h4>
+                        <p class="role-summary">Enhanced a student learning platform by building responsive UI features.
+                            Optimized layouts for implementation across mobile and desktop devices to ensure a smooth
+                            user experience.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
                     </div>
-                    <h3>CSS3</h3>
-                    <p>Designing responsive, beautiful layouts with modern CSS techniques and animations.</p>
-                    <a href="#" class="service-link">Learn More</a>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fab fa-js-square"></i>
+
+                <!-- Item 3 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2025 – Jul 2025 (1 Month)</div>
+                        <h3>Emglitz Technologies</h3>
+                        <h4>Python Full Stack Intern</h4>
+                        <p class="role-summary">Built a landslide prediction model using Machine Learning and Python.
+                            Focused on data preprocessing, exploratory data analysis, and improving model prediction
+                            accuracy.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
                     </div>
-                    <h3>JavaScript</h3>
-                    <p>Building interactive, dynamic web applications with vanilla JavaScript and modern frameworks.</p>
-                    <a href="#" class="service-link">Learn More</a>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-pen-nib"></i>
+
+                <!-- Item 4 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2024 – Jan 2025 (2 Months)</div>
+                        <h3>Altruisity Internship Program</h3>
+                        <h4>Full Stack Intern</h4>
+                        <p class="role-summary">Focused on frontend development for a full-stack project. Designed
+                            responsive components and structured the user interface for optimal performance.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
                     </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Creating user-centered designs that are both beautiful and functional for optimal user experience.</p>
-                    <a href="#" class="service-link">Learn More</a>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fab fa-python"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category-card">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
                     </div>
-                    <h3>Python</h3>
-                    <p>Developing backend solutions and automation scripts using Python programming language.</p>
-                    <a href="#" class="service-link">Learn More</a>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fab fa-java"></i>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>PHP</span>
                     </div>
-                    <h3>Java</h3>
-                    <p>Building robust applications and solving complex problems with Java programming.</p>
-                    <a href="#" class="service-link">Learn More</a>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
+
+                <!-- Frameworks & Libraries -->
+                <div class="skill-category-card">
+                    <div class="skill-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>React.js</span>
+                        <span>Bootstrap</span>
+                        <span>Laravel (PHP)</span>
+                        <span>Django (Python)</span>
+                    </div>
+                </div>
+
+                <!-- Databases & Backend -->
+                <div class="skill-category-card">
+                    <div class="skill-header">
                         <i class="fas fa-database"></i>
+                        <h3>Databases & Backend</h3>
                     </div>
-                    <h3>MySQL</h3>
-                    <p>Managing and optimizing database systems for efficient data storage and retrieval.</p>
-                    <a href="#" class="service-link">Learn More</a>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                    </div>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-bar"></i>
+
+                <!-- Web Development -->
+                <div class="skill-category-card">
+                    <div class="skill-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Web Development</h3>
                     </div>
-                    <h3>Power BI</h3>
-                    <p>Creating interactive dashboards and data visualizations for business intelligence.</p>
-                    <a href="#" class="service-link">Learn More</a>
+                    <div class="skill-tags">
+                        <span>Front-End Development</span>
+                        <span>Web Application Development</span>
+                    </div>
+                </div>
+
+                <!-- Version Control -->
+                <div class="skill-category-card">
+                    <div class="skill-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Version Control</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -217,7 +288,7 @@
     <section class="projects" id="projects">
         <div class="projects-container">
             <h2 class="section-title">My <span>Projects</span></h2>
-            
+
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
@@ -232,7 +303,7 @@
                     <div class="project-content">
                         <h3>Personal Portfolio Website — Self Project </h3>
                         <p>Built a personal portfolio website using HTML, CSS, and JavaScript to showcase projects,
-skills, and education in a modern UI.</p>
+                            skills, and education in a modern UI.</p>
                         <div class="project-tech">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
@@ -240,10 +311,10 @@ skills, and education in a modern UI.</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assests/legal chatbot.png" alt="Law chatbot">
+                        <img src="assests/legal_chatbot_v2.png" alt="Law chatbot">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
@@ -254,7 +325,7 @@ skills, and education in a modern UI.</p>
                     <div class="project-content">
                         <h3>Law Chatbot — Personal Project </h3>
                         <p>Built a chatbot application designed to provide responses based on Indian law
-references and legal provisions</p>
+                            references and legal provisions</p>
                         <div class="project-tech">
                             <span class="tech-tag">JavaScript</span>
                             <span class="tech-tag">API</span>
@@ -262,13 +333,12 @@ references and legal provisions</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-card">
                     <div class="project-image">
                         <img src="assests/voice_assistant.png" alt="Voice Assistant">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
@@ -276,12 +346,12 @@ references and legal provisions</p>
                     <div class="project-content">
                         <h3>Voice Assistant — Python Mini Project </h3>
                         <p>Developed a voice assistant module in Python using the pyttsx3 library to convert text into
-natural-sounding speech.</p>
+                            natural-sounding speech.</p>
                         <div class="project-tech">
                             <span class="tech-tag">HTML5</span>
                             <span class="tech-tag">CSS3</span>
                             <span class="tech-tag">JavaScript</span>
-                             <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Python</span>
                         </div>
                     </div>
                 </div>
@@ -299,25 +369,150 @@ natural-sounding speech.</p>
                     <div class="project-content">
                         <h3>Cognify — Responsive Website Design</h3>
                         <p>Designed and developed a fully responsive website named Cognify using HTML, CSS,
-JavaScript, and Bootstrap with a modern, engaging UI.</p>
+                            JavaScript, and Bootstrap with a modern, engaging UI.</p>
                         <div class="project-tech">
                             <span class="tech-tag">HTML5</span>
                             <span class="tech-tag">CSS3</span>
                             <span class="tech-tag">JavaScript</span>
-                             <span class="tech-tag">Bootstrap</span>
-
+                            <span class="tech-tag">Bootstrap</span>
                         </div>
                     </div>
                 </div>
-                
-                
+
+                <!-- Landslide Prediction Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assests/landslide_prediction.png" alt="Landslide Prediction Model">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Daniel04-hub/Landslide-detection.git" target="_blank"
+                                    class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Landslide Prediction Model — Internship Project</h3>
+                        <p>Developed a predictive machine learning model to analyze geological datasets for risk
+                            assessment. Built a data preprocessing pipeline and implemented visualization modules for
+                            susceptibility mapping.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Stack Blog Application Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assests/blog_app_v1.png" alt="Full Stack Blog App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Daniel04-hub/blogpage-using-django.git" target="_blank"
+                                    class="project-link" title="Django Blog"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Daniel04-hub/blog-page.git" target="_blank"
+                                    class="project-link" title="Blog Page"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Full Stack Blog Application — Internship Project</h3>
+                        <p>Developed a secure blog app with authentication, RBAC, and session management. Designed
+                            optimized database models with audit fields and automated seeders for efficiency.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shape Runner Game Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assests/shape_runner_v1.png" alt="Shape Runner Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Daniel04-hub/Shape-Runner.git" target="_blank"
+                                    class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Shape Runner — 2D Arcade Game</h3>
+                        <p>A classic top-down arcade game where players collect coins and avoid enemies. Features
+                            increasing difficulty levels and a WASM-based web build for browser playability.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Arcade</span>
+                            <span class="tech-tag">Pygame</span>
+                            <span class="tech-tag">WASM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NexEntry Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assests/nexentry_v1.png" alt="NexEntry Authentication System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Daniel04-hub/NexEntry.git" target="_blank"
+                                    class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>NexEntry — Full-Stack Auth System</h3>
+                        <p>Designed a robust full-stack app with secure authentication and hybrid database architecture.
+                            Features responsive UI, scalable profile management, and high-speed session caching.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AgroAssist AI Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assests/agroassist_v1.png" alt="AgroAssist AI App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Daniel04-hub/AgroAssist-AI.git" target="_blank"
+                                    class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AgroAssist AI — Smart Farming App</h3>
+                        <p>A mobile app empowering farmers with AI-driven crop disease detection, expert consultation,
+                            and real-time assistance. Built with reliable offline-first architecture.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Expo</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">Gemini AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="contact-container">
             <h2 class="section-title">Contact <span>Me</span></h2>
-            
+
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
@@ -329,7 +524,7 @@ JavaScript, and Bootstrap with a modern, engaging UI.</p>
                             <p>naveendaniel2004@gmail.com</p>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
@@ -339,7 +534,7 @@ JavaScript, and Bootstrap with a modern, engaging UI.</p>
                             <p>+91 7904108277</p>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
@@ -350,24 +545,24 @@ JavaScript, and Bootstrap with a modern, engaging UI.</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <form class="contact-form" id="contact-form">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    
+
                     <button type="submit" class="btn-sub" id="submit-btn">Send Message</button>
                 </form>
             </div>
@@ -393,19 +588,20 @@ JavaScript, and Bootstrap with a modern, engaging UI.</p>
         </div>
     </footer>
 
-        <!-- Scripts -->
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Scripts -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- EmailJS v4 SDK (required) -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<!-- Initialize EmailJS with your Public Key (from EmailJS dashboard) -->
-<script>
-  emailjs.init({ publicKey: '0KTc0XYD07b7hIUwr' });
-</script>
+    <!-- Initialize EmailJS with your Public Key (from EmailJS dashboard) -->
+    <script>
+        emailjs.init({ publicKey: '0KTc0XYD07b7hIUwr' });
+    </script>
 
-<!-- Your script (make sure it loads AFTER the SDK above) -->
-<script src="script.js" defer></script>
+    <!-- Your script (make sure it loads AFTER the SDK above) -->
+    <script src="script.js" defer></script>
 
 
 </body>
+
 </html>
