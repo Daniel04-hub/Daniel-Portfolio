@@ -194,48 +194,43 @@ function showNotification(message, type) {
     });
 }
 
-function animateOnScroll() {
-    const elements = document.querySelectorAll('.service-card, .project-card, .timeline-item');
-    
-    elements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 50;
-
-        if (elementTop < window.innerHeight - elementVisible) {
-            if (element.classList.contains('timeline-item')) {
-                element.classList.add('visible');
-                element.style.opacity = '1';
-                element.style.transform = 'translateX(0)';
-            } else {
-                element.style.opacity = '1';
-                element.style.transform = 'translateY(0)';
-            }
-        }
-    });
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('.service-card, .project-card, .timeline-item');
-    let timelineIndex = 0;
     
-    elements.forEach(element => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const element = entry.target;
+                if (element.classList.contains('timeline-item')) {
+                    element.classList.add('visible');
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateX(0)';
+                } else {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+                observer.unobserve(element);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: "0px 0px 50px 0px" // Trigger slightly before the item scrolls fully into view
+    });
+    
+    elements.forEach((element, index) => {
         element.style.opacity = '0';
         element.style.willChange = 'opacity, transform';
         if (element.classList.contains('timeline-item')) {
             const fromLeft = element.classList.contains('left');
             element.style.transform = `translateX(${fromLeft ? '-60px' : '60px'})`;
             element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            element.style.transitionDelay = `${(timelineIndex++) * 0.05}s`;
         } else {
             element.style.transform = 'translateY(30px)';
             element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         }
+        observer.observe(element);
     });
-    
-    animateOnScroll();
 });
-
-window.addEventListener('scroll', animateOnScroll);
 
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
