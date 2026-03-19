@@ -304,7 +304,7 @@ body {
 .social-links {
     display: flex;
     gap: 25px;
-    /* Increased gap */
+    flex-wrap: wrap;
     opacity: 0;
     animation: slideUp 0.8s ease 1s forwards;
     position: relative;
@@ -330,6 +330,7 @@ body {
     /* Bouncy transition */
     font-size: 22px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
 }
 
 .social-link:hover {
@@ -1332,6 +1333,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .footer-links a {
@@ -1579,7 +1581,7 @@ body {
     }
 
     .timeline-item .timeline-icon {
-        left: -5px !important;
+        left: -63px !important;
         right: auto !important;
     }
 
