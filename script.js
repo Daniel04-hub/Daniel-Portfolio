@@ -197,12 +197,12 @@ function showNotification(message, type) {
 document.addEventListener('DOMContentLoaded', function() {
     new Typed('#typing-name', {
         strings: ['Naveen Daniel'],
-        typeSpeed: 100,
-        backSpeed: 50,
+        typeSpeed: 150,
+        backSpeed: 80,
         startDelay: 500,
         loop: true,
         showCursor: true,
-        cursorChar: '|'
+        cursorChar: '<span style="font-weight: 300;">|</span>'
     });
 
     const elements = document.querySelectorAll('.service-card, .project-card, .timeline-item');
