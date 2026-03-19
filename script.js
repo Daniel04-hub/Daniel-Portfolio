@@ -195,6 +195,16 @@ function showNotification(message, type) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    new Typed('#typing-name', {
+        strings: ['Naveen Daniel'],
+        typeSpeed: 100,
+        backSpeed: 50,
+        startDelay: 500,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|'
+    });
+
     const elements = document.querySelectorAll('.service-card, .project-card, .timeline-item');
     
     const observer = new IntersectionObserver((entries) => {
