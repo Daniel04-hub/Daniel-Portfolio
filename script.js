@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
         startDelay: 500,
         loop: true,
         showCursor: true,
-        cursorChar: '<span style="font-weight: 300;">|</span>'
+        cursorChar: '<span style="font-weight: 100;">|</span>'
     });
 
     const elements = document.querySelectorAll('.service-card, .project-card, .timeline-item');
