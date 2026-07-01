@@ -44,18 +44,35 @@
 
     <!-- Home Section -->
     <section class="home" id="home">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
         <div class="home-container">
             <div class="home-content">
-                <h3 class="animate-text">Hi There!</h3>
-                <h1 class="animate-text">I'm <span id="typing-name">Naveen Daniel</span><br>Full Stack Developer</h1>
-                <p class="animate-text">Passionate about creating beautiful, responsive, and user-friendly web
+                <div class="availability-badge reveal-item">
+                    <span class="pulse-dot"></span>
+                    Open to opportunities
+                </div>
+                
+                <h1 class="hero-title reveal-item">
+                    <span class="stagger-line line-1">Naveen</span><br>
+                    <span class="stagger-line line-2">Daniel</span><br>
+                    <span class="stagger-line line-3"><span id="typing-name"></span></span>
+                </h1>
+                
+                <div class="typewriter-subtext reveal-item">
+                    <span id="typing-internet"></span>
+                </div>
+                
+                <p class="reveal-item">Passionate about creating beautiful, responsive, and user-friendly web
                     applications with modern technologies.</p>
 
                 <div class="btn-box">
                     <button class="btn-primary" onclick="scrollToSection('contact')">Hire Me</button>
-                    <a href="assests/Naveen_Daniel_R_CV.pdf" download="Naveen_Daniel_R_CV.pdf" class="btn-secondary"
-                        style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Download
-                        CV</a>
+                    <a href="assests/Naveen_Daniel_R_CV.pdf" download="Naveen_Daniel_R_CV.pdf" class="btn-secondary" id="download-cv-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <i class="fas fa-lock" style="margin-right: 8px; position: relative; z-index: 1;"></i>
+                        <span class="scramble-text" style="position: relative; z-index: 1;">Download CV</span>
+                        <div class="scanner"></div>
+                    </a>
                 </div>
 
                 <div class="social-links">
@@ -66,9 +83,21 @@
                 </div>
             </div>
 
-            <div class="home-image">
+            <div class="home-image reveal-item">
                 <div class="image-container">
+                    <div class="orbit-ring">
+                        <div class="orbit-dot"></div>
+                    </div>
                     <img src="assests/NaveenDaniel.png" alt="Naveen Daniel" class="profile-img">
+                    <div class="floating-tag tag-1">
+                        <i class="fab fa-react" style="color: #61DAFB;"></i> React.js
+                    </div>
+                    <div class="floating-tag tag-2">
+                        <i class="fab fa-python" style="color: #3776AB;"></i> Django
+                    </div>
+                    <div class="floating-tag tag-3">
+                        <i class="fas fa-database" style="color: #336791;"></i> PostgreSQL
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,14 +107,30 @@
     <section class="about" id="about">
         <div class="about-container">
             <div class="about-image">
-                <div class="image-wrapper">
-                    <img src="assests/NaveenDaniel.png" alt="Naveen Daniel" class="about-img" loading="lazy">
+                <div class="image-wrapper card-wrapper reveal-item">
+                    <div class="location-badge">
+                        <i class="fas fa-map-marker-alt"></i> Tirupur, India
+                    </div>
+                    <img src="assests/NaveenDaniel.png" alt="Naveen Daniel" class="about-img rounded-card" loading="lazy">
+                    <div class="stat-badge">
+                        <div style="display: flex; align-items: baseline;">
+                            <span class="stat-number count-up" data-target="2">0</span><span class="stat-number">+</span>
+                        </div>
+                        <span class="stat-text">Internships</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="about-content">
-                <h2 class="section-title">About <span>Me</span></h2>
-                <h3>Full Stack <span>Developer</span></h3>
+            <div class="about-content reveal-item">
+                <div class="section-label">
+                    <span class="line-prefix"></span> ABOUT ME
+                </div>
+                
+                <div class="role-line">
+                    Full Stack Developer &middot; 2026 Graduate <span class="line-suffix"></span>
+                </div>
+
+                <h3 class="about-heading">Transforming ideas into modern digital experiences.</h3>
                 <p>I'm a passionate full stack developer with a strong foundation in modern web technologies. I enjoy
                     creating responsive, user-friendly websites and applications that provide excellent user
                     experiences. My goal is to bridge the gap between design and functionality.</p>
@@ -115,26 +160,61 @@
         <div class="education-container">
             <h2 class="section-title">My <span>Education</span></h2>
 
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2019-2021</div>
+            <div class="timeline reveal-item timeline-track-anim">
+                <!-- HSC Card -->
+                <div class="timeline-item left hsc-item reveal-item" style="transition-delay: 0.5s !important;">
+                    <div class="timeline-content edu-card">
+                        <div class="card-top-accent"></div>
+                        <div class="edu-card-header">
+                            <div class="timeline-date">2019-2021</div>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
                         <h3>Higher Secondary</h3>
-                        <h4>83%</h4>
                         <p>Infant Jesus Matriculation Higher Secondary School</p>
+                        
+                        <div class="stats-row">
+                            <div class="stat-pill">
+                                <i class="fas fa-chart-line"></i>
+                                <span class="stat-label">Score:</span>
+                                <span class="stat-value"><span class="count-up" data-target="83">0</span>%</span>
+                            </div>
+                            <div class="stat-pill">
+                                <i class="fas fa-book"></i>
+                                <span class="stat-label">Stream:</span>
+                                <span class="stat-value">Computer Science</span>
+                            </div>
+                        </div>
+
+
+
                         <div class="timeline-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                     </div>
                 </div>
 
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2022-2026</div>
+                <!-- Degree Card -->
+                <div class="timeline-item right degree-item reveal-item" style="transition-delay: 0.9s !important;">
+                    <div class="timeline-content edu-card active-card">
+                        <div class="card-top-accent"></div>
+                        <div class="edu-card-header">
+                            <div class="timeline-date">2022-2026</div>
+                            <span class="status-badge in-progress">In Progress</span>
+                        </div>
                         <h3>Engineering Degree</h3>
-                        <h4>In Progress</h4>
                         <p>Kathir College of Engineering</p>
-                        <div class="timeline-icon">
+                        
+                        <div class="stats-row">
+                            <div class="stat-pill">
+                                <i class="fas fa-star"></i>
+                                <span class="stat-label">CGPA:</span>
+                                <span class="stat-value count-up" data-target="8.0" data-decimals="1">0.0</span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="timeline-icon active-icon">
                             <i class="fas fa-university"></i>
                         </div>
                     </div>
@@ -288,219 +368,223 @@
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
-        <div class="projects-container">
-            <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="sticky-wrapper">
+            <div class="projects-container">
+                <h2 class="section-title">My <span>Projects</span></h2>
 
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assests/project_cv.png" alt="Portfolio" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <div class="project-card" data-color="blue">
+                        <div class="project-image">
+                            <img src="assests/project_cv.png" alt="Portfolio" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio Website — Self Project </h3>
+                            <p>Built a personal portfolio website using HTML, CSS, and JavaScript to showcase projects,
+                                skills, and education in a modern UI.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Personal Portfolio Website — Self Project </h3>
-                        <p>Built a personal portfolio website using HTML, CSS, and JavaScript to showcase projects,
-                            skills, and education in a modern UI.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assests/legal_chatbot_v2.png" alt="Law chatbot" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <div class="project-card" data-color="orange">
+                        <div class="project-image">
+                            <img src="assests/legal_chatbot_v2.png" alt="Law chatbot" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Law Chatbot — Personal Project </h3>
+                            <p>Built a chatbot application designed to provide responses based on Indian law
+                                references and legal provisions</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">CSS3</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Law Chatbot — Personal Project </h3>
-                        <p>Built a chatbot application designed to provide responses based on Indian law
-                            references and legal provisions</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API</span>
-                            <span class="tech-tag">CSS3</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assests/voice_assistant.png" alt="Voice Assistant" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <div class="project-card" data-color="indigo">
+                        <div class="project-image">
+                            <img src="assests/voice_assistant.png" alt="Voice Assistant" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Voice Assistant — Python Mini Project </h3>
+                            <p>Developed a voice assistant module in Python using the pyttsx3 library to convert text into
+                                natural-sounding speech.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Python</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Voice Assistant — Python Mini Project </h3>
-                        <p>Developed a voice assistant module in Python using the pyttsx3 library to convert text into
-                            natural-sounding speech.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Python</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assests/dream.png" alt="Cognify" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <div class="project-card" data-color="green">
+                        <div class="project-image">
+                            <img src="assests/dream.png" alt="Cognify" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Cognify — Responsive Website Design</h3>
+                            <p>Designed and developed a fully responsive website named Cognify using HTML, CSS,
+                                JavaScript, and Bootstrap with a modern, engaging UI.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Cognify — Responsive Website Design</h3>
-                        <p>Designed and developed a fully responsive website named Cognify using HTML, CSS,
-                            JavaScript, and Bootstrap with a modern, engaging UI.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Bootstrap</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Landslide Prediction Project -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assests/landslide_prediction.png" alt="Landslide Prediction Model" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Daniel04-hub/Landslide-detection.git" target="_blank"
-                                    class="project-link"><i class="fab fa-github"></i></a>
+                    <!-- Landslide Prediction Project -->
+                    <div class="project-card" data-color="purple">
+                        <div class="project-image">
+                            <img src="assests/landslide_prediction.png" alt="Landslide Prediction Model" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Daniel04-hub/Landslide-detection.git" target="_blank"
+                                        class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Landslide Prediction Model — Internship Project</h3>
+                            <p>Developed a predictive machine learning model to analyze geological datasets for risk
+                                assessment. Built a data preprocessing pipeline and implemented visualization modules for
+                                susceptibility mapping.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Matplotlib</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Landslide Prediction Model — Internship Project</h3>
-                        <p>Developed a predictive machine learning model to analyze geological datasets for risk
-                            assessment. Built a data preprocessing pipeline and implemented visualization modules for
-                            susceptibility mapping.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                            <span class="tech-tag">Matplotlib</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Full Stack Blog Application Project -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assests/blog_app_v1.png" alt="Full Stack Blog App" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Daniel04-hub/blogpage-using-django.git" target="_blank"
-                                    class="project-link" title="Django Blog"><i class="fab fa-github"></i></a>
-                                <a href="https://github.com/Daniel04-hub/blog-page.git" target="_blank"
-                                    class="project-link" title="Blog Page"><i class="fab fa-github"></i></a>
+                    <!-- Full Stack Blog Application Project -->
+                    <div class="project-card" data-color="yellow">
+                        <div class="project-image">
+                            <img src="assests/blog_app_v1.png" alt="Full Stack Blog App" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Daniel04-hub/blogpage-using-django.git" target="_blank"
+                                        class="project-link" title="Django Blog"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/Daniel04-hub/blog-page.git" target="_blank"
+                                        class="project-link" title="Blog Page"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Full Stack Blog Application — Internship Project</h3>
+                            <p>Developed a secure blog app with authentication, RBAC, and session management. Designed
+                                optimized database models with audit fields and automated seeders for efficiency.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">REST APIs</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Full Stack Blog Application — Internship Project</h3>
-                        <p>Developed a secure blog app with authentication, RBAC, and session management. Designed
-                            optimized database models with audit fields and automated seeders for efficiency.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">REST APIs</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Shape Runner Game Project -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assests/shape_runner_v1.png" alt="Shape Runner Game" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Daniel04-hub/Shape-Runner.git" target="_blank"
-                                    class="project-link"><i class="fab fa-github"></i></a>
+                    <!-- Shape Runner Game Project -->
+                    <div class="project-card" data-color="blue">
+                        <div class="project-image">
+                            <img src="assests/shape_runner_v1.png" alt="Shape Runner Game" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Daniel04-hub/Shape-Runner.git" target="_blank"
+                                        class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Shape Runner — 2D Arcade Game</h3>
+                            <p>A classic top-down arcade game where players collect coins and avoid enemies. Features
+                                increasing difficulty levels and a WASM-based web build for browser playability.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Arcade</span>
+                                <span class="tech-tag">Pygame</span>
+                                <span class="tech-tag">WASM</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Shape Runner — 2D Arcade Game</h3>
-                        <p>A classic top-down arcade game where players collect coins and avoid enemies. Features
-                            increasing difficulty levels and a WASM-based web build for browser playability.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Arcade</span>
-                            <span class="tech-tag">Pygame</span>
-                            <span class="tech-tag">WASM</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- NexEntry Project -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assests/nexentry_v1.png" alt="NexEntry Authentication System" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Daniel04-hub/NexEntry.git" target="_blank"
-                                    class="project-link"><i class="fab fa-github"></i></a>
+                    <!-- NexEntry Project -->
+                    <div class="project-card" data-color="green">
+                        <div class="project-image">
+                            <img src="assests/nexentry_v1.png" alt="NexEntry Authentication System" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Daniel04-hub/NexEntry.git" target="_blank"
+                                        class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>NexEntry — Full-Stack Auth System</h3>
+                            <p>Designed a robust full-stack app with secure authentication and hybrid database architecture.
+                                Features responsive UI, scalable profile management, and high-speed session caching.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">AWS</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>NexEntry — Full-Stack Auth System</h3>
-                        <p>Designed a robust full-stack app with secure authentication and hybrid database architecture.
-                            Features responsive UI, scalable profile management, and high-speed session caching.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">AWS</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- AgroAssist AI Project -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assests/agroassist_v1.png" alt="AgroAssist AI App" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Daniel04-hub/AgroAssist-AI.git" target="_blank"
-                                    class="project-link"><i class="fab fa-github"></i></a>
+                    <!-- AgroAssist AI Project -->
+                    <div class="project-card" data-color="purple">
+                        <div class="project-image">
+                            <img src="assests/agroassist_v1.png" alt="AgroAssist AI App" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Daniel04-hub/AgroAssist-AI.git" target="_blank"
+                                        class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>AgroAssist AI — Smart Farming App</h3>
-                        <p>A mobile app empowering farmers with AI-driven crop disease detection, expert consultation,
-                            and real-time assistance. Built with reliable offline-first architecture.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Expo</span>
-                            <span class="tech-tag">Supabase</span>
-                            <span class="tech-tag">Gemini AI</span>
+                        <div class="project-content">
+                            <h3>AgroAssist AI — Smart Farming App</h3>
+                            <p>A mobile app empowering farmers with AI-driven crop disease detection, expert consultation,
+                                and real-time assistance. Built with reliable offline-first architecture.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Expo</span>
+                                <span class="tech-tag">Supabase</span>
+                                <span class="tech-tag">Gemini AI</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -512,10 +596,20 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2" style="bottom: 0; right: 0; top: auto; left: auto;"></div>
+        
         <div class="contact-container">
-            <h2 class="section-title">Contact <span>Me</span></h2>
+            <div class="contact-header reveal-item">
+                <div class="availability-badge" style="margin-bottom: 20px;">
+                    <span class="pulse-dot"></span>
+                    Available for work — replies in <24h
+                </div>
+                <h2 class="contact-hero-title">Let's <span>Connect</span></h2>
+                <p class="contact-subtitle">Want to hire or want to give a project for work? You can message me here.</p>
+            </div>
 
-            <div class="contact-content">
+            <div class="contact-content reveal-item">
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">
@@ -543,18 +637,28 @@
                         </div>
                         <div class="contact-details">
                             <h3>Location</h3>
-                            <p>Tirupur,Tamil Nadu, India</p>
+                            <p>Tirupur, Tamil Nadu, India</p>
                         </div>
+                    </div>
+                    
+                    <div class="contact-social-row">
+                        <a href="https://www.linkedin.com/in/naveendaniel04/" class="social-circle" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Daniel04-hub" class="social-circle" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
 
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
+                <div class="spline-container">
+                    <spline-viewer url="https://prod.spline.design/E6QOj4c6Gj8g7OIz/scene.splinecode"></spline-viewer>
+                </div>
 
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <form class="contact-form glass-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
                     </div>
 
                     <div class="form-group">
@@ -602,8 +706,8 @@
     <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <!-- Your script (make sure it loads AFTER the SDK above) -->
-    <script src="script.js" defer></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.97/build/spline-viewer.js"></script>
+    <script src="script.js"></script>
 
 
 </body>
