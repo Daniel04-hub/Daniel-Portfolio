@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    const elements = document.querySelectorAll('.service-card, .project-card, .timeline-item');
+    const elements = document.querySelectorAll('.service-card, .project-card, .cyber-card-container, .timeline-item');
     
     // Animate numbers function (ease-out curve)
     const animateValue = (obj, start, end, duration, isFloat) => {
@@ -304,7 +304,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    initProjectsCarousel();
 });
 
 window.addEventListener('scroll', () => {
@@ -395,57 +394,7 @@ function validateForm(formData) {
     window.addEventListener('mousemove', onMove, { passive: true });
 })();
 
-function initProjectsCarousel() {
-    const section = document.querySelector('.projects');
-    const track = document.querySelector('.carousel-track');
-    const cards = Array.from(document.querySelectorAll('.project-card'));
-    
-    if (!section || !track || cards.length === 0) return;
 
-    function onScroll() {
-        const sectionRect = section.getBoundingClientRect();
-        
-        const scrollOffset = -sectionRect.top;
-        const maxScroll = sectionRect.height - window.innerHeight;
-        
-        let progress = scrollOffset / maxScroll;
-        if (progress < 0) progress = 0;
-        if (progress > 1) progress = 1;
-        
-        const maxTranslate = track.scrollWidth - window.innerWidth;
-        const translateX = -(maxTranslate * progress);
-        
-        track.style.transform = `translateX(${translateX}px)`;
-        
-        const viewportCenter = window.innerWidth / 2;
-        
-        cards.forEach(card => {
-            const cardRect = card.getBoundingClientRect();
-            const cardCenter = cardRect.left + (cardRect.width / 2);
-            
-            const distFromCenter = Math.abs(viewportCenter - cardCenter);
-            
-            const maxDist = window.innerWidth * 0.6; 
-            let normalizedDist = distFromCenter / maxDist;
-            if (normalizedDist > 1) normalizedDist = 1;
-            
-            const scale = 1 - (normalizedDist * 0.15); // min scale 0.85
-            const opacity = 1 - (normalizedDist * 0.6); // min opacity 0.4
-            
-            card.style.transform = `scale(${scale})`;
-            card.style.opacity = opacity;
-            
-            // Adjust z-index so center cards are always on top of edge cards
-            card.style.zIndex = Math.floor(100 - (normalizedDist * 100));
-        });
-    }
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll, { passive: true });
-    
-    // Initial call with timeout to ensure styles/fonts are computed
-    setTimeout(onScroll, 100);
-}
 
 // Scramble Text Button Logic
 (function initScrambleButton() {
